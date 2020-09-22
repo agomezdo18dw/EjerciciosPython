@@ -1,26 +1,23 @@
 def contar_vocales(palabra):
-    Va = 0
-    Ve = 0
-    Vi = 0
-    Vo = 0
-    Vu = 0
+    vocales = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
     for letra in palabra:
         if letra in "aA":
-            Va += 1
+            vocales['a'] += 1
         elif letra in "eE":
-            Ve += 1
+            vocales['e'] += 1
         elif letra in "iI":
-            Vi += 1
+            vocales['i'] += 1
         elif letra in "oO":
-            Vo += 1
+            vocales['o'] += 1
         elif letra in "uU":
-            Vu += 1
-    print("La palabra " + palabra + " tiene:")
-    print("Letra(s) a: " + str(Va))
-    print("Letra(s) e: " + str(Ve))
-    print("Letra(s) i: " + str(Vi))
-    print("Letra(s) o: " + str(Vo))
-    print("Letra(s) e: " + str(Vu))
+            vocales['u'] += 1
+    print('')
+    print("La palabra '" + palabra + "' tiene:")
+    print("Letra(s) a: " + str(vocales['a']))
+    print("Letra(s) e: " + str(vocales['e']))
+    print("Letra(s) i: " + str(vocales['i']))
+    print("Letra(s) o: " + str(vocales['o']))
+    print("Letra(s) e: " + str(vocales['u']))
 
 print("------------------------------------------------------------")
 print("Introduce una palabra para ver cuantas vocales de cada tiene")
