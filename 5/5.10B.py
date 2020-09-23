@@ -8,7 +8,7 @@ def duplicado(lista):
 
 def aleatorio():
     lista = list()
-    for n in range(0, 23):
+    for _ in range(0, 23):
         numero = random.randint(1, 100)
         lista.append(numero)
     return lista
