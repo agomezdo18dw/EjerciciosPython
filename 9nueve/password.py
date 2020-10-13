@@ -59,11 +59,11 @@ class HeredaPassword(Password):
         return listafuerte
          
 
-    def imprimirListaFuerte(self):
-        for contraseña, esFuerte in zip(self.listapassword, self.crearListaFuerte()):
+    def imprimirListaFuerte(self, listaFuerte):
+        for contraseña, esFuerte in zip(self.listapassword, listaFuerte):
             print("Password: {a: >30}, ¿Es fuerte?: {b: >2}".format(a=contraseña.contraseña, b=str(esFuerte)))
 
 
 p=HeredaPassword()
 p.cargarListaPassword(10)
-p.imprimirListaFuerte()
+p.imprimirListaFuerte(p.crearListaFuerte())
