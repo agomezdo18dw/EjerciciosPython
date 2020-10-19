@@ -17,7 +17,7 @@ def guardar_telefono(agenda, nombre):
     tel = str(input("Escribe el telefono de " + nombre + ": "))
     agenda[nombre] = tel
     print("Guardando telefono de " + nombre + "...")
-    return agenda
+    #return agenda
 
 
 print("------")
